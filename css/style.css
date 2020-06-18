@@ -1,0 +1,210 @@
+  .container{
+    width: 2480px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .container .left{
+    width: 905px;
+    background: #39383a;
+    border-right: 50px solid #eaeaea;
+  }
+  .container .left .avatar img{
+    width: 864px;
+    height: 600px;
+  }
+  .container .left .profile{
+    margin-top: 48px;
+    margin-right: 50px;
+    padding-left: 80px;
+  }
+  .container .left .profile .profile-name{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  .container .left .profile .profile-detail{
+    font-size: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #eaeaea;
+  }
+  .container .left .profile ul{
+    margin-top: 20px;
+
+  }
+  .container .left .profile ul li{
+    width: 100%;
+    display: inline-block;
+    padding:  20px 0;
+    border-bottom: 1px dashed #dddddd;
+  }
+  .container .left .profile ul li .detail{
+    display: flex;
+  }
+  .container .left .profile ul li .detail{
+    font-size: 20px;
+    color: white;
+  }
+  .container .left .profile ul li .content{
+    padding-left: 20px;
+  }
+  .content-detail{
+    padding-top: 10px;
+    color:#dddddd;
+  }
+  .language{
+    margin-right: 50px;
+    margin-left: 80px;
+    color: white;
+    font-size: 24px;
+  }
+  .language .header{
+    border-bottom: 1px dashed #dddddd;
+    padding: 50px 50px 50px 0;
+  }
+  .language-detail{
+    margin-top: 20px;
+  }
+  .language-detail ul{
+    margin-left: 20px;
+  }
+  .language-detail ul li{
+    display: inline-block;
+    margin:30px 80px 0 80px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #dddddd;
+    border-radius: 100%;
+  }
+  .language-detail ul li .content{
+    padding-top: 60px;
+  }
+  .right{
+    width: 1380px;
+    margin: 50px;
+    border: 1px solid #dddddd;
+  }
+  .right .logo{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .right .logo .logo-name{
+    width: 230px;
+    height: 230px;
+    line-height: 230px;
+    font-size: 40px;
+    font-weight: bold;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .logo-decoration{
+    width: 200px;
+    margin-top: -50px;
+  }
+  .logo-decoration .line2{
+    width: 140px;
+    border-bottom: 2px solid black;
+    height: 50px;
+    margin-left: 50px;
+  }
+  .logo-decoration .line1,
+  .logo-decoration .line3{
+    margin-left: 20px;
+    width: 120px;
+    height: 50px;
+    border-bottom: 2px solid black;
+  }
+  .information{
+    text-align: center;
+    margin: 0 145px;
+  }
+  .information h1{
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+  .role{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #dddddd;
+    padding: 10px 0;
+  }
+  .information .address{
+    padding-top: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black;
+  }
+  .information .contact{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid #dddddd;
+  }
+  .information ul{
+    padding-bottom: 20px;
+  }
+  .information ul li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 20px;
+    border-right: 2px solid black;
+  }
+  .information ul li:last-child{
+    border-right-width: 0px;
+  }
+  .information ul li::first-letter{
+    font-weight: bold;
+  }
+  .experience{
+    margin: 0 145px;
+    border-bottom: 1px solid #dddddd;
+  }
+  .experience p{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
+  .skill{
+    border-bottom: 1px solid #dddddd;
+    margin: 50px 145px;
+  }
+  .html,.css,.js,.jquery{
+    width: 80%;
+    height: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    position: relative;
+    z-index: 1;
+  }
+
+  .html p,
+  .css p,
+  .js p,
+  .jquery p{
+    position: absolute;
+    top: -20px;
+    left: 10px;
+  }
+  @keyframes skill-up{
+    from{ width: 0px;}
+    to{width: 80%;}
+  }
+  .html::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: skill-up;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    height: 100%;
+    background: blue;
+    z-index: -1;
+  }
+
+
+  
